@@ -21,5 +21,6 @@
   
   library('igraph')
   library('mvtnorm')
+  
   source('FitAttribute.R')
   Out=FitAttribute(MyNet,MyAttribute,0)
