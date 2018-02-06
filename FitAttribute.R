@@ -11,6 +11,9 @@ FitAttribute=function(Network,AttributeMat,Prob){
 			#0: no these are not probabilities
 			#1: yes these are probabilities
 
+#Please make sure you have igraph
+library('igraph')
+
 #################
 #Initialization: Initialize partition of nodes into communities 
 #################
