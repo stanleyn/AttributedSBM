@@ -1,19 +1,19 @@
-# AttributedSBM
-#Objective: This function is for fitting the attributed stochastic block model to a network with multiple continuous attributes.
-#Last Edited: February 6, 2017
-#For bugs: Please contact NatalieStanley1318@gmail.com
+AttributedSBM
+Objective: This function is for fitting the attributed stochastic block model to a network with multiple continuous attributes.
+Last Edited: July 8, 2018
+For bugs: Please contact NatalieStanley1318@gmail.com
 #Implementation details: Tested in R version 3.4.3
-#Dependencies:igraph and mvtnorm
+Dependencies:igraph and mvtnorm
 
-#Inputs:
+Inputs:
   
-  #Network: An NxN adjaceny matrix. It can be sparse
+Network: An NxN adjaceny matrix. It can be sparse
   
-  #Attribute Mat: NxP vector of attributes, where p is the number of attributes you have
+Attribute Mat: NxP vector of attributes, where p is the number of attributes you have
  
- #Prob: An indicator for wheether your attributes represent a probability of being in each of p communities. Use 0 if your     attributes are not probabilities. 
+Prob: An indicator for wheether your attributes represent a probability of being in each of p communities. Use 0 if your     attributes are not probabilities. 
 
-#Outputs: A list object with entries
+Outputs: A list object with entries
   $Comm: Node to community assignment
   
   $SBMProb: SBM probability parameters (between community probability matrix)
@@ -26,6 +26,7 @@
   Example:
   
   library('igraph')
+  
   library('mvtnorm')
   
   source('FitAttribute.R')
